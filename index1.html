@@ -1,0 +1,276 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<title>My Webpage</title>
+ 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+ 	<style>
+ 		*{
+ 			font-family: 'Montserrat', sans-serif;
+ 		}
+ 		.container{
+ 			width: 100%;
+ 			margin: 0 auto;
+
+ 		}
+
+ 		.header{
+ 			background-color: #eee;
+ 			min-height: 50px;
+ 			text-align: center;
+ 		}
+
+ 		.logo img{
+ 			width: 200px;
+
+ 		}
+
+ 		.menu ul{
+ 			padding: 0;
+ 		}
+
+ 		.menu ul li{
+ 			display: inline-block;
+ 			position: relative;
+ 		}
+
+ 		.menu ul li a{
+ 			padding: 10px 20px;
+ 			text-decoration: none;
+ 		}
+
+ 		.menu ul li:hover ul.submenu{
+ 			display: block;
+ 		}
+
+ 		ul .submenu{
+ 			background-color: #eee;
+ 			border: 1px solid #ccc;
+ 			text-align: left;
+ 			position: absolute;
+ 			top: 20px;
+ 			left: 10px;
+ 			display: none;
+ 		}
+
+ 		ul .submenu li{
+ 			display: block;
+ 		}
+
+ 		ul .submenu li a{
+ 			padding: 5px 10px;
+ 			display: block;
+ 		}
+
+ 		.jumbotron{
+ 			width: 100%;
+ 			height: 1080px;
+ 			padding: 80px 40px; 
+ 			box-sizing: border-box;
+ 			text-align: center;
+ 			color: white;
+ 			background-color: #aaa;
+ 			background-image: url(image 1.jpg);
+ 			background-size: cover;
+ 			position: relative;
+ 		}
+
+ 		.jumbotron h2, .jumbotron p{
+ 			position: relative;
+ 		}
+
+ 		.overlay{
+ 			position: absolute;
+ 			top: 0;
+ 			left: 0;
+ 			width: 100%;
+ 			height: 100%;
+ 			background-color: black;
+ 			opacity: 0.3;
+ 		}
+
+ 		.content{
+ 			min-height: 500px;
+ 			overflow: auto;
+ 			margin-left: 39%;
+ 			
+ 		}
+
+ 		.thumbnail1{
+ 			background: #583d72;
+			color: white;
+ 			text-align: center;
+ 			width: 300px;
+ 			margin: 10px;
+ 			float: left;
+ 			background-size: cover;
+			background-repeat: no-repeat;
+			height: 150px;
+			/*padding: 15px;
+			margin-top: 700px;
+			margin-bottom: 700px;*/
+			margin: 0 auto;
+
+		}
+
+		.thumbnail2{
+ 			background: darkred;
+			color: white;
+ 			text-align: center;
+ 			width: 300px;
+ 			margin: 10px;
+ 			float: left;
+ 			background-size: cover;
+			background-repeat: no-repeat;
+			height: 150px;
+			/*padding: 15px;
+			margin-top: 700px;*/
+			margin: 0 auto;
+
+		}
+
+		.thumbnail3{
+ 			background: #583d72;
+			color: white;
+ 			text-align: center;
+ 			width: 300px;
+ 			margin: 10px;
+ 			float: left;
+ 			background-size: cover;
+			background-repeat: no-repeat;
+			height: 150px;
+			/*padding: 15px;
+			margin-top: 700px;*/
+			margin: 0 auto;
+
+		}
+
+
+ 		.footer1{
+ 			background-color: #402f47;
+ 			min-height: 350px;
+ 			padding: 20px;
+ 			text-align: center
+ 		}
+
+ 		.footer1 h2{
+ 			color: #e6336e;
+ 		}
+
+ 		.footer1 p{
+ 			color: white;
+
+ 		}
+
+ 		.box{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 5%;
+}
+
+
+ 		.footer{
+ 			color: white;
+ 			background-color: #e6336e;
+ 			min-height: 50px;
+ 			padding: 20px;
+ 			text-align: center
+
+ 		}
+ 	</style>
+ </head>
+ <body>
+ <div class="container">
+ 	<div class="header">
+ 		<div class="menu">
+ 			<ul>
+ 				<li>
+ 					<a href="">Home</a>
+ 				</li>
+ 				<li>
+ 					<a href="">Tentang</a>
+ 					<ul class="submenu">
+ 						<li>
+ 							<a href="">CV</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Education</a>
+ 						</li>
+ 						<li>
+ 							<a href="">Portopolio</a>
+ 						</li>
+ 					</ul>
+ 				</li>
+ 				<li>
+ 					<a href="">Lokasi</a>
+ 				</li>
+ 				<li>
+ 					<a href="">Kontak</a>
+ 				</li>
+ 				<li>
+ 					<a href="">Galeri</a>
+ 				</li>
+ 			</ul>
+ 		</div>
+ 	</div>
+
+ 	<div class="jumbotron">
+ 		<div class="overlay"></div>
+ 		<h2>HUNIAN MEWAH IMPIANMU</h2>
+ 		<p>Hunian nyaman yang dibangun diatas
+	 		tanah ang lebih luas, Tipe bangunan 36 sampai 120 M, 
+	 		di 20 provinsi diindonesia.</p>
+ 	</div>
+
+ 	<div class="content">
+
+ 		<div class="thumbnail1">
+ 			<h2>20</h2>
+ 			<p>PROVINSI TERSEDIA</p>
+ 		</div>
+
+ 		<div class="thumbnail2">
+ 			<h2>850</h2>
+ 			<p>UNIT TERJUAL</p>
+ 		</div>
+
+ 		<div class="thumbnail3">
+ 			<h2>10</h2>
+ 			<p>DEVELOPER TERBAIK</p>
+ 		</div>
+ 	</div>
+
+ 	<div class="tengah">
+ 		<div><img src="image 2.jpg" alt="gambar" style="width: 1500px;height: 1020px;  margin-top:25px; margin-bottom: 25px; margin-left: 70px;"></div>
+ 		<h3>FASILITAS</h3>
+ 	</div>
+
+ 	<div class="footer1">
+ 		<h2>TEMUKAN RUMAH IMPIANMU</h2>
+ 		<p>Cari Lokasi Perumahan :</p>
+ 		<form>
+ 		<div class="box">
+             <select name="city" id="city">
+                <option value="Blank">Pilih tipe</option>
+                <option value="Banjarmasin">Banjarmasin</option>
+                <option value="Banjarbaru">Banjarbaru</option>
+                <option value="Martapura">Martapura</option>
+             </select>
+         
+		  <input class="search" type="text" placeholder="Cari Lokasi" required>	
+		  <input class="button" type="button" value="SEARCH">		
+		</form>
+		</div>
+ 	</div>
+
+ 	<div class="footer">
+ 		<p>Cozy Regency | Copyright 2020 All Rights Reserved. Design by <b><u> Abdul Ghani</u></b></p>
+ 	</div>
+ </div>
+ </body>
+ </html>
